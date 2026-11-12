@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sx7OgpQDpIQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\acerv\\OneDrive\\Documentos\\uni\\3erSemestre\\desarrolloDeServiciosWeb\\tercerParcial\\dsw_pr02\\dsw_pr02.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\acerv\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "C:\\Users\\acerv\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}
