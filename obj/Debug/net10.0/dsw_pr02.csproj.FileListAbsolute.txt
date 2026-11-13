@@ -166,3 +166,8 @@ C:\Users\acerv\OneDrive\Documentos\uni\3erSemestre\desarrolloDeServiciosWeb\terc
 C:\Users\acerv\OneDrive\Documentos\uni\3erSemestre\desarrolloDeServiciosWeb\tercerParcial\dsw_pr02\obj\Debug\net10.0\dsw_pr02.pdb
 C:\Users\acerv\OneDrive\Documentos\uni\3erSemestre\desarrolloDeServiciosWeb\tercerParcial\dsw_pr02\obj\Debug\net10.0\dsw_pr02.genruntimeconfig.cache
 C:\Users\acerv\OneDrive\Documentos\uni\3erSemestre\desarrolloDeServiciosWeb\tercerParcial\dsw_pr02\obj\Debug\net10.0\ref\dsw_pr02.dll
+C:\Users\acerv\OneDrive\Documentos\uni\3erSemestre\desarrolloDeServiciosWeb\tercerParcial\dsw_pr02\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\acerv\OneDrive\Documentos\uni\3erSemestre\desarrolloDeServiciosWeb\tercerParcial\dsw_pr02\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\acerv\OneDrive\Documentos\uni\3erSemestre\desarrolloDeServiciosWeb\tercerParcial\dsw_pr02\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\acerv\OneDrive\Documentos\uni\3erSemestre\desarrolloDeServiciosWeb\tercerParcial\dsw_pr02\bin\Debug\net10.0\dsw_pr02.xml
+C:\Users\acerv\OneDrive\Documentos\uni\3erSemestre\desarrolloDeServiciosWeb\tercerParcial\dsw_pr02\obj\Debug\net10.0\dsw_pr02.xml

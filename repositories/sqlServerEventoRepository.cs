@@ -13,17 +13,17 @@ public class EventoSqlRepository : IEventoRepository
         _context = context;
     }
 
-    public List<Evento> GetAll()
+    public List<Evento> ObtenerTodos()
     {
         return _context.Eventos.ToList();
     }
 
-    public Evento? GetById(int id)
+    public Evento? ObtenerPorId(int id)
     {
         return _context.Eventos.Find(id);
     }
 
-    public void Add(Evento evento)
+    public void Agregar(Evento evento)
     {
         evento.Id = 0;
 
@@ -31,7 +31,7 @@ public class EventoSqlRepository : IEventoRepository
         _context.SaveChanges();
     }
 
-    public void Update(Evento evento)
+    public void Actualizar(Evento evento)
     {
         var existingEvento = _context.Eventos.Find(evento.Id);
         if (existingEvento == null)
@@ -48,7 +48,7 @@ public class EventoSqlRepository : IEventoRepository
         _context.SaveChanges();
     }
 
-    public void Delete(int id)
+    public void Eliminar(int id)
     {
         var evento = _context.Eventos.Find(id);
         if (evento == null)
@@ -58,12 +58,5 @@ public class EventoSqlRepository : IEventoRepository
 
         _context.Eventos.Remove(evento);
         _context.SaveChanges();
-    }
-
-    public List<Evento> GetByCategoria(string categoria)
-    {
-        return _context.Eventos
-            .Where(e => e.Categoria == categoria)
-            .ToList();
     }
 }

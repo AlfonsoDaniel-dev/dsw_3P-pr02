@@ -12,17 +12,17 @@ public class EventoService : IEventoService
         _eventoRepository = eventoRepository;
     }
 
-    public List<Evento> GetAll()
+    public List<Evento> ObtenerTodos()
     {
-        return _eventoRepository.GetAll();
+        return _eventoRepository.ObtenerTodos();
     }
 
-    public Evento? GetById(int id)
+    public Evento? ObtenerPorId(int id)
     {
-        return _eventoRepository.GetById(id);
+        return _eventoRepository.ObtenerPorId(id);
     }
 
-    public void Add(Evento evento)
+    public void Agregar(Evento evento)
     {
         ArgumentNullException.ThrowIfNull(evento);
 
@@ -30,25 +30,24 @@ public class EventoService : IEventoService
 
         evento.Activo = true;
 
-        _eventoRepository.Add(evento);
+        _eventoRepository.Agregar(evento);
     }
 
-    public void Update(Evento evento)
+    public void Actualizar(Evento evento)
     {
         ArgumentNullException.ThrowIfNull(evento);
 
-        if (_eventoRepository.GetById(evento.Id) == null)
+        if (_eventoRepository.ObtenerPorId(evento.Id) == null)
         {
             throw new KeyNotFoundException($"No existe un evento con id {evento.Id}.");
         }
 
-
-        _eventoRepository.Update(evento);
+        _eventoRepository.Actualizar(evento);
     }
 
-    public void Delete(int id)
+    public void Eliminar(int id)
     {
-        var evento = _eventoRepository.GetById(id);
+        var evento = _eventoRepository.ObtenerPorId(id);
         if (evento == null)
         {
             throw new KeyNotFoundException($"No existe un evento con id {id}.");
@@ -59,7 +58,7 @@ public class EventoService : IEventoService
             throw new InvalidOperationException("No se puede eliminar un evento activo. Desactívelo primero.");
         }
 
-        _eventoRepository.Delete(id);
+        _eventoRepository.Eliminar(id);
     }
 
     private static void Validar(Evento evento)
@@ -84,6 +83,4 @@ public class EventoService : IEventoService
             throw new ArgumentException("El número máximo de asistentes debe ser mayor que cero.", nameof(evento));
         }
     }
-
-
 }
