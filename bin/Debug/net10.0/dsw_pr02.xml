@@ -68,16 +68,16 @@
             <response code="404">No existe un evento con ese id.</response>
             <response code="409">El evento está activo; desactívelo antes de eliminarlo.</response>
         </member>
-        <member name="T:dsw_pr02.Migrations.initial">
+        <member name="T:dsw_pr02.Migrations.migrationsPostgreSQL.InitialPostgres">
             <inheritdoc />
         </member>
-        <member name="M:dsw_pr02.Migrations.initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:dsw_pr02.Migrations.migrationsPostgreSQL.InitialPostgres.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:dsw_pr02.Migrations.initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:dsw_pr02.Migrations.migrationsPostgreSQL.InitialPostgres.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:dsw_pr02.Migrations.initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:dsw_pr02.Migrations.migrationsPostgreSQL.InitialPostgres.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
         <member name="T:Program">

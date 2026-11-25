@@ -23,10 +23,11 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFile));
 });
 
-builder.Services.AddDbContext<AppDBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<PostgreSqlDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSqlConnection")));
 
-builder.Services.AddScoped<IEventoRepository, EventoSqlRepository>();
+//builder.Services.AddScoped<IEventoRepository, EventoSqlRepository>();
+builder.Services.AddScoped<IEventoRepository, EventoPostgreSqlRepository>();
 builder.Services.AddScoped<IEventoService, EventoService>();
 
 var app = builder.Build();
